@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background">
+
+    <GridView
+        android:layout_height="wrap_content"
+        android:id="@+id/technoGridView"
+        android:layout_width="match_parent"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:stretchMode="columnWidth"
+
+
+        android:listSelector="@android:color/transparent"></GridView>
+</LinearLayout>
+
+
+    <!-- <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/toolcs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background"
+        android:paddingTop="4dp">
+
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+            <View android:id="@+id/fakeView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"/>
+
+            <Button
+                style="@style/MainButton.Left"
+                android:id="@+id/but1"
+                android:layout_alignRight="@id/fakeView"
+                android:text="@string/tech_cyber"
+                />
+
+            <Button
+                style="@style/MainButton.Right"
+                android:id="@+id/but2"
+                android:layout_alignLeft="@id/fakeView"
+                android:text="@string/tech_sanga"
+                />
+
+
+            <Button
+                style="@style/MainButton.Left"
+                android:id="@+id/but3"
+                android:layout_alignRight="@id/fakeView"
+                android:layout_below="@id/but1"
+                android:text="@string/tech_mech"
+                />
+
+
+            <Button
+                style="@style/MainButton.Right"
+                android:id="@+id/but4"
+                android:layout_alignLeft="@id/fakeView"
+                android:layout_below="@id/but2"
+                android:text="@string/tech_citadel"
+                />
+
+            <Button
+                style="@style/MainButton.Left"
+                android:id="@+id/but5"
+                android:layout_alignRight="@id/fakeView"
+                android:layout_below="@id/but3"
+                android:text="@string/tech_rasay"
+                />
+
+            <Button
+                style="@style/MainButton.Right"
+                android:id="@+id/but6"
+                android:layout_alignLeft="@id/fakeView"
+                android:layout_below="@id/but4"
+                android:text="@string/tech_lycra"
+                />
+
+
+            <Button
+                style="@style/MainButton.Left"
+                android:id="@+id/but7"
+                android:layout_alignRight="@id/fakeView"
+                android:layout_below="@id/but5"
+                android:text="@string/tech_openx"
+               />
+
+            <Button
+                style="@style/MainButton.Right"
+                android:id="@+id/but8"
+                android:layout_alignLeft="@id/fakeView"
+                android:layout_below="@id/but6"
+                android:text="@string/tech_contrap"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+     -->

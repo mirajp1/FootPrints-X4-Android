@@ -1,0 +1,167 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:paddingBottom="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/folow_us__l"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_card">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/website_icon"
+                    android:src="@drawable/website"
+
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/InfoData.EventInchargeData"
+                    android:id="@+id/website"
+                    android:layout_toRightOf="@id/website_icon"
+                    android:layout_height="35dp"
+                    android:layout_width="match_parent"
+                    android:text="@string/website"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp" />
+
+
+                <ImageView
+                    android:id="@+id/on_reg_icon"
+                    android:src="@drawable/website"
+                    android:layout_below="@id/website_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/InfoData.EventInchargeData"
+                    android:id="@+id/on_reg"
+                    android:layout_toRightOf="@id/on_reg_icon"
+                    android:layout_below="@id/website"
+                    android:layout_height="35dp"
+                    android:layout_width="match_parent"
+                    android:text="@string/on_reg"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/fb_icon"
+                    android:src="@drawable/fb_icon"
+                    android:layout_below="@id/on_reg_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/InfoData.EventInchargeData"
+                    android:id="@+id/fb"
+                    android:layout_toRightOf="@id/fb_icon"
+                    android:layout_below="@id/on_reg"
+                    android:layout_height="35dp"
+                    android:layout_width="match_parent"
+                    android:text="@string/fb"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/yt_icon"
+                    android:layout_below="@id/fb_icon"
+                    android:src="@drawable/yt_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/InfoData.EventInchargeData"
+                    android:id="@+id/yt"
+                    android:layout_toRightOf="@id/yt_icon"
+                    android:layout_below="@id/fb"
+                    android:layout_height="35dp"
+                    android:layout_width="match_parent"
+                    android:text="@string/yt"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/twit_icon"
+                    android:layout_below="@id/yt_icon"
+                    android:src="@drawable/twit_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/InfoData.EventInchargeData"
+                    android:id="@+id/twit"
+                    android:layout_toRightOf="@id/twit_icon"
+                    android:layout_below="@id/yt"
+                    android:layout_height="35dp"
+                    android:layout_width="match_parent"
+                    android:text="@string/twit"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp" />
+
+
+                <ImageView
+                    android:id="@+id/li_icon"
+                    android:layout_below="@id/twit_icon"
+                    android:src="@drawable/li_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/InfoData.EventInchargeData"
+                    android:id="@+id/li"
+                    android:layout_toRightOf="@id/li_icon"
+                    android:layout_below="@id/twit"
+                    android:layout_height="35dp"
+                    android:layout_width="match_parent"
+                    android:text="@string/li"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp" />
+
+
+                <ImageView
+                    android:id="@+id/quora_icon"
+                    android:layout_below="@id/li_icon"
+                    android:src="@drawable/quora"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/InfoData.EventInchargeData"
+                    android:id="@+id/quora"
+                    android:layout_toRightOf="@id/quora_icon"
+                    android:layout_below="@id/li"
+                    android:layout_height="35dp"
+                    android:layout_width="match_parent"
+                    android:text="@string/quora"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

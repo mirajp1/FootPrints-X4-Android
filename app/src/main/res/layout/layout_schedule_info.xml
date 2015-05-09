@@ -1,0 +1,1791 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/enter_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:padding="10dp"
+            android:text="@string/enter_event_id"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white" />
+
+        <EditText
+            android:id="@+id/enter_et"
+            android:layout_below="@id/enter_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:hint="@string/event_id_hint"
+            android:inputType="text"
+            android:maxLength="7" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/button"
+            android:layout_below="@id/enter_et"
+            android:onClick="RegisterClick"
+            android:text="@string/get_schedule"
+            android:textSize="17sp"
+            android:background="@drawable/main_button"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="10dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/schedule_info_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:layout_below="@id/button">
+
+            <TableLayout
+                android:id="@+id/schedule_info"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#CCC"
+                android:shrinkColumns="1"
+                android:paddingTop="1dp"
+                android:stretchColumns="1">
+
+
+                <TextView
+                    android:id="@+id/event_name"
+                    android:text="Burnout"
+                    android:padding="5dp"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:layout_marginBottom="1dp" />
+
+                <TextView
+                    android:id="@+id/dayh_1"
+                    android:text="day-1"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:layout_marginBottom="1dp" />
+
+
+                <TableRow
+                    android:id="@+id/place_1_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/place_1"
+                        android:text="@string/place"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/place_1_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot1_1_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot1_1"
+                        android:text="@string/slot1"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot1_1_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot2_1_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot2_1"
+                        android:text="@string/slot2"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot2_1_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot3_1_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot3_1"
+                        android:text="@string/slot3"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot3_1_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot4_1_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot4_1"
+                        android:text="@string/slot4"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot4_1_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot5_1_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot5_1"
+                        android:text="@string/slot5"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot5_1_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+                <TextView
+                    android:id="@+id/dayh_2"
+                    android:text="day-1-1"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:layout_marginBottom="1dp" />
+
+
+                <TableRow
+                    android:id="@+id/place_2_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/place_2"
+                        android:text="@string/place"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/place_2_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot1_2_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot1_2"
+                        android:text="@string/slot1"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot1_2_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot2_2_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot2_2"
+                        android:text="@string/slot2"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot2_2_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot3_2_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot3_2"
+                        android:text="@string/slot3"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot3_2_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot4_2_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot4_2"
+                        android:text="@string/slot4"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot4_2_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot5_2_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot5_2"
+                        android:text="@string/slot5"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot5_2_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+                <TextView
+                    android:id="@+id/dayh_3"
+                    android:text="day-2"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:layout_marginBottom="1dp" />
+
+
+                <TableRow
+                    android:id="@+id/place_3_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/place_3"
+                        android:text="@string/place"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/place_3_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot1_3_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot1_3"
+                        android:text="@string/slot1"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot1_3_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot2_3_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot2_3"
+                        android:text="@string/slot2"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot2_3_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot3_3_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot3_3"
+                        android:text="@string/slot3"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot3_3_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot4_3_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot4_3"
+                        android:text="@string/slot4"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot4_3_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot5_3_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot5_3"
+                        android:text="@string/slot5"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot5_3_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+                <TextView
+                    android:id="@+id/dayh_4"
+                    android:text="day-2-1"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:layout_marginBottom="1dp" />
+
+
+                <TableRow
+                    android:id="@+id/place_4_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/place_4"
+                        android:text="@string/place"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/place_4_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot1_4_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot1_4"
+                        android:text="@string/slot1"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot1_4_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot2_4_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot2_4"
+                        android:text="@string/slot2"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot2_4_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot3_4_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot3_4"
+                        android:text="@string/slot3"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot3_4_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot4_4_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot4_4"
+                        android:text="@string/slot4"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot4_4_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot5_4_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot5_4"
+                        android:text="@string/slot5"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot5_4_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+                <TextView
+                    android:id="@+id/dayh_5"
+                    android:text="day-3"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:layout_marginBottom="1dp" />
+
+
+                <TableRow
+                    android:id="@+id/place_5_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/place_5"
+                        android:text="@string/place"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/place_5_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot1_5_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot1_5"
+                        android:text="@string/slot1"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot1_5_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot2_5_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot2_5"
+                        android:text="@string/slot2"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot2_5_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot3_5_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot3_5"
+                        android:text="@string/slot3"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot3_5_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot4_5_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot4_5"
+                        android:text="@string/slot4"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot4_5_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot5_5_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot5_5"
+                        android:text="@string/slot5"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot5_5_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+                <TextView
+                    android:id="@+id/dayh_6"
+                    android:text="day-3-1"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:layout_marginBottom="1dp" />
+
+
+                <TableRow
+                    android:id="@+id/place_6_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/place_6"
+                        android:text="@string/place"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/place_6_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot1_6_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot1_6"
+                        android:text="@string/slot1"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot1_6_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot2_6_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot2_6"
+                        android:text="@string/slot2"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot2_6_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot3_6_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot3_6"
+                        android:text="@string/slot3"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot3_6_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot4_6_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot4_6"
+                        android:text="@string/slot4"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot4_6_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/slot5_6_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/slot5_6"
+                        android:text="@string/slot5"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/slot5_6_t"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+        </RelativeLayout>
+
+
+        <!--
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/button"
+            android:padding="10dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white"
+            />
+
+        <TableLayout
+            android:id="@+id/day1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/event_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white"
+            >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/day_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/day1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/place"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/place"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/place_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot1"
+                    android:text="@string/slot1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot1_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot2"
+                    android:text="@string/slot2"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot2_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot3"
+                    android:text="@string/slot3"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot3_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot4"
+                    android:text="@string/slot4"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot4_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot5"
+                    android:text="@string/slot5"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot5_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+
+        <TableLayout
+            android:id="@+id/day2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/day1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white"
+            >
+
+            <TableRow
+                android:id="@+id/tableRow1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                       android:id="@+id/day_2"
+                    android:text="@string/day2"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/place_2"
+                    android:padding="5dp"
+                    android:text="@string/place"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/place_2_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot1_2"
+                    android:text="@string/slot1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot1_2_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot2_2"
+                    android:text="@string/slot2"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot2_2_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot3_2"
+                    android:text="@string/slot3"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot3_2_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot4_2"
+                    android:text="@string/slot4"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot4_2_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot5_2"
+                    android:text="@string/slot5"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot5_2_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+
+
+        <TableLayout
+            android:id="@+id/day3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/day2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white"
+            >
+
+            <TableRow
+                android:id="@+id/tableRow1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                       android:id="@+id/day_3"
+                    android:text="@string/day3"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/place_3"
+                    android:padding="5dp"
+                    android:text="@string/place"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/place_3_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot1_3"
+                    android:text="@string/slot1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot1_3_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot2_3"
+                    android:text="@string/slot2"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot2_3_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot3_3"
+                    android:text="@string/slot3"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot3_3_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot4_3"
+                    android:text="@string/slot4"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot4_3_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                >
+
+                <TextView
+                    android:id="@+id/slot5_3"
+                    android:text="@string/slot5"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/slot5_3_1"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+
+                    />
+
+
+            </TableRow>
+
+        </TableLayout>-->
+
+    </RelativeLayout>
+</ScrollView>

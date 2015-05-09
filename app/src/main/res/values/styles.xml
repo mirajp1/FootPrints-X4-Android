@@ -1,0 +1,100 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+
+    <style name="MyTheme.ActionBarStyle" parent="Widget.Sherlock.ActionBar">
+        <item name="background">#ffc0392b</item>
+        <item name="android:background">#ffc0392b</item>
+    </style>
+
+    <style name="Theme.SherlockCustom" parent="@style/Theme.Sherlock">
+        <item name="actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+    </style>
+
+    <style name="MainButton">
+        <item name="android:background">@drawable/card_button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">160dp</item>
+
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:padding">8dp</item>
+
+    </style>
+
+    <style name="MainButton.Left">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+
+    </style>
+
+
+    <style name="MainButton.Right">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+
+    </style>
+
+    <style name="InfoHeader">
+        <item name="android:textColor">@color/info_header_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="InfoData">
+        <item name="android:textColor">@color/info_data_text</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="InfoData.EventInchargeData">
+        <item name="android:layout_marginLeft">-5dip</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="InfoData.EventInchargeData.Num">
+        <item name="android:textColor">@color/blue</item>
+
+    </style>
+
+    <style name="MainButtonTextHeader">
+        <item name="android:textColor">@drawable/main_button_text_name</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="MainButtonTextDept">
+        <item name="android:textColor">@drawable/main_button_text_dept</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+</resources>

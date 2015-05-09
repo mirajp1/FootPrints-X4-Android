@@ -1,0 +1,576 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_background">
+
+
+        <TextView
+            android:id="@+id/enter_email_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:padding="10dp"
+            android:text="@string/enter_email"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white" />
+
+        <EditText
+            android:id="@+id/enter_email_et"
+            android:layout_below="@id/enter_email_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_below="@id/enter_email_et"
+            android:id="@+id/enter_mob_num_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:padding="10dp"
+            android:text="@string/enter_mob_num"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/nine_one"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/enter_mob_num_tv"
+            android:layout_margin="8dp"
+            android:text="@string/nine_one"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:background="@android:color/white" />
+
+        <EditText
+            android:id="@+id/enter_mob_num_et"
+            android:layout_below="@id/enter_mob_num_tv"
+            android:layout_toRightOf="@id/nine_one"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/num_hint"
+            android:inputType="phone"
+            android:numeric="integer"
+            android:maxLength="10" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/button"
+            android:layout_below="@id/nine_one"
+            android:onClick="RegisterClick"
+            android:text="@string/get_fp_id"
+            android:background="@drawable/main_button"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="10dp"
+            android:textSize="17sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/fp_id_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:layout_below="@id/button">
+
+            <TableLayout
+                android:id="@+id/details"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#CCC"
+                android:shrinkColumns="1"
+                android:paddingTop="1dp"
+                android:stretchColumns="1">
+
+
+                <TableRow
+                    android:id="@+id/name_r"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="1dp"
+                    android:background="#CCC">
+
+                    <TextView
+                        android:id="@+id/fp_id_1"
+                        android:text="@string/fp_id"
+                        android:textSize="18sp"
+                        android:background="#FFF"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+
+                        android:padding="5dp"
+
+                        />
+
+
+                    <TextView
+
+                        android:id="@+id/fp_id"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@android:color/white"
+                        android:textStyle="bold"
+                        android:text="FP-0000"
+                        android:padding="5dp"
+                        android:singleLine="false"
+                        android:layout_width="match_parent" />
+
+
+                </TableRow>
+
+
+                <TableRow
+
+                    android:id="@+id/name_r"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="1dp"
+                    android:background="#CCC"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:padding="5dp"
+                        android:text="@string/name"
+                        android:textSize="18sp"
+                        android:background="#FFF"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/name_1"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="jdasdsdasdasd"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="1dp"
+                        android:singleLine="false"
+                        android:background="#FFF" />
+
+
+                </TableRow>
+
+
+                <TextView
+                    android:id="@+id/event_ids"
+                    android:text="@string/event_ids"
+                    android:padding="5dp"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:layout_marginBottom="1dp" />
+
+
+                <TableRow
+                    android:id="@+id/event1_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/event_id1"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/event_name1"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="555555-O-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/event2_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/event_id2"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:background="#fff"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/event_name2"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="hjjhhO-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/event3_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/event_id3"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:id="@+id/event_name3"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="Burnout: Siez-O-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/event4_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/event_id4"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:id="@+id/event_name4"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="Burnout: Siez-O-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/event5_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/event_id5"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:id="@+id/event_name5"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="Burnout: Siez-O-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/event6_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/event_id6"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:id="@+id/event_name6"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="Burnout: Siez-O-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/event7_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/event_id7"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:id="@+id/event_name7"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="Burnout: Siez-O-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/event8_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/event_id8"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:id="@+id/event_name8"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="Burnout: Siez-O-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/event9_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/event_id9"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:id="@+id/event_name9"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="Burnout: Siez-O-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/event10_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/event_id10"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:id="@+id/event_name10"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="Burnout: Siez-O-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/event11_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/event_id11"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:id="@+id/event_name11"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="Burnout: Siez-O-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/event12_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/event_id12"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:id="@+id/event_name12"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="Burnout: Siez-O-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/event13_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CCC"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/event_id13"
+                        android:text="FP-0001"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:id="@+id/event_name13"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="Burnout: Siez-O-Blaze"
+                        android:layout_marginLeft="1dp"
+                        android:background="#fff"
+                        android:singleLine="false" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background">
+
+    <GridView
+        android:layout_height="wrap_content"
+        android:id="@+id/mainGridView"
+        android:layout_width="match_parent"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:stretchMode="columnWidth"
+
+
+        android:listSelector="@android:color/transparent"></GridView>
+</LinearLayout>
+
+    <!-- <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_background">
+
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp">
+
+            <View android:id="@+id/fakeView"
+           android:layout_width="0dp"
+           android:layout_height="0dp"
+           android:layout_centerInParent="true"/>
+
+            <Button
+                style="@style/MainButton.Left"
+                android:id="@+id/technotron"
+                android:text="@string/techno"
+                android:layout_alignRight="@id/fakeView"
+                   />
+
+            <Button
+                style="@style/MainButton.Right"
+                android:id="@+id/kaleido"
+                android:layout_gravity="center"
+                android:layout_alignLeft="@id/fakeView"
+                   android:text="@string/kaleido"
+                android:drawableTop="@drawable/gamble_b"
+                  />
+
+            <Button
+                style="@style/MainButton.Left"
+                android:id="@+id/quest"
+                android:layout_alignRight="@id/fakeView"
+                   android:layout_below="@id/technotron"
+                android:text="@string/quest"
+                />
+
+            <Button
+                style="@style/MainButton.Right"
+                android:id="@+id/rs"
+                android:layout_gravity="center"
+                android:layout_alignLeft="@id/fakeView"
+                   android:layout_below="@id/kaleido"
+                android:text="@string/rs"
+                />
+
+
+            <Button
+                style="@style/MainButton.Left"
+                android:id="@+id/fsr"
+                android:layout_gravity="center"
+                android:layout_alignRight="@id/fakeView"
+                   android:layout_below="@id/quest"
+                android:text="@string/fsr"
+                />
+
+            <Button
+                style="@style/MainButton.Right"
+                android:id="@+id/fse"
+                android:layout_alignLeft="@id/fakeView"
+                   android:layout_below="@id/rs"
+                android:text="@string/fse"
+                />
+
+
+            <Button
+                style="@style/MainButton.Left"
+                android:id="@+id/virtuosity"
+                android:layout_alignRight="@id/fakeView"
+                   android:layout_below="@id/fsr"
+                android:text="@string/virtuosity"
+                />
+
+            <Button
+                style="@style/MainButton.Right"
+                android:id="@+id/addons"
+                android:layout_alignLeft="@id/fakeView"
+                   android:layout_below="@id/fse"
+                android:text="@string/addons"
+                />
+
+            <Button
+                style="@style/MainButton.Left"
+                android:id="@+id/accomo"
+                android:layout_alignRight="@id/fakeView"
+                android:layout_below="@id/virtuosity"
+                android:text="@string/accomodation"
+                />
+
+            <Button
+                style="@style/MainButton.Right"
+                android:id="@+id/schedule"
+                android:layout_alignLeft="@id/fakeView"
+                android:layout_below="@id/addons"
+                android:text="@string/schedule"
+                />
+
+
+
+    </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+    -->

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background">
+
+    <!-- symbols used 
+    
+    	_l means layout idn
+    	_icon means icon for that box
+    	_h means textview of header of box
+    	_d means the divider
+    	_i means the textview of the information of that box
+    
+    	
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/photo_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/date_venue_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:layout_below="@id/photo_l"
+            android:layout_marginTop="8dp">
+
+
+            <ImageView
+                android:id="@+id/date_venue_icon"
+                android:src="@drawable/date_venue"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp" />
+
+
+            <TextView
+                style="@style/InfoHeader"
+                android:id="@+id/date_venue_h"
+                android:text="@string/date_venue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/date_venue_icon" />
+
+
+            <View
+                android:id="@+id/date_venue_d"
+                android:layout_below="@id/date_venue_icon"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#40111111"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                style="@style/InfoData"
+                android:id="@+id/date_venue_i"
+                android:layout_below="@id/date_venue_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/team_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:layout_below="@id/date_venue_l"
+            android:layout_marginTop="8dp">
+
+
+            <ImageView
+                android:id="@+id/team_icon"
+                android:src="@drawable/team"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp" />
+
+
+            <TextView
+                style="@style/InfoHeader"
+                android:id="@+id/team_h"
+                android:text="@string/team"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/team_icon" />
+
+
+            <View
+                android:id="@+id/team_d"
+                android:layout_below="@id/team_icon"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#40111111"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                style="@style/InfoData"
+                android:id="@+id/team_i"
+                android:layout_below="@id/team_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fees_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:layout_below="@id/team_l"
+            android:layout_marginTop="8dp">
+
+
+            <ImageView
+                android:id="@+id/fees_icon"
+                android:src="@drawable/fees"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp" />
+
+
+            <TextView
+                style="@style/InfoHeader"
+                android:id="@+id/fees_h"
+                android:text="@string/fees"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/fees_icon" />
+
+
+            <View
+                android:id="@+id/fees_d"
+                android:layout_below="@id/fees_icon"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#40111111"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                style="@style/InfoData"
+                android:id="@+id/fees_i"
+                android:layout_below="@id/fees_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/event_inchr_l"
+            android:layout_below="@id/fees_l"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_card"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/event_inchr_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/event_inchr_icon"
+                    android:src="@drawable/event_inchr"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="13dp" />
+
+
+                <TextView
+                    style="@style/InfoHeader"
+                    android:id="@+id/event_inchr_h"
+                    android:text="@string/event_inchr"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/event_inchr_icon" />
+
+
+                <View
+                    android:id="@+id/event_inchr_d"
+                    android:layout_below="@id/event_inchr_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#40111111"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_inchr_header"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp">
+
+                <RelativeLayout
+                    android:layout_weight="1.0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/inchr_name_icon_1"
+                        android:src="@drawable/event_inchr_name"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        style="@style/InfoData.EventInchargeData"
+                        android:id="@+id/inchr_name_text_1"
+                        android:layout_toRightOf="@id/inchr_name_icon_1"
+                        android:layout_height="35dp"
+                        android:layout_width="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/inchr_num_icon_1"
+                        android:layout_below="@id/inchr_name_icon_1"
+                        android:src="@drawable/phone"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        style="@style/InfoData.EventInchargeData.Num"
+                        android:id="@+id/inchr_num_text_1"
+                        android:layout_toRightOf="@id/inchr_num_icon_1"
+                        android:layout_below="@id/inchr_name_text_1"
+                        android:layout_height="35dp"
+                        android:layout_width="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/inchr_email_icon_1"
+                        android:layout_below="@id/inchr_num_icon_1"
+                        android:src="@drawable/email"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        style="@style/InfoData.EventInchargeData"
+                        android:id="@+id/inchr_email_text_1"
+                        android:layout_toRightOf="@id/inchr_email_icon_1"
+                        android:layout_below="@id/inchr_num_text_1"
+                        android:layout_height="35dp"
+                        android:layout_width="match_parent"
+                        android:text="@string/email_me" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1.0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/inchr_name_icon_2"
+                        android:src="@drawable/event_inchr_name"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        style="@style/InfoData.EventInchargeData"
+                        android:id="@+id/inchr_name_text_2"
+                        android:layout_toRightOf="@id/inchr_name_icon_2"
+                        android:layout_height="35dp"
+                        android:layout_width="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/inchr_num_icon_2"
+                        android:layout_below="@id/inchr_name_icon_2"
+                        android:src="@drawable/phone"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="10dp" />
+
+                    <TextView
+
+                        style="@style/InfoData.EventInchargeData.Num"
+                        android:id="@+id/inchr_num_text_2"
+                        android:layout_toRightOf="@id/inchr_num_icon_2"
+                        android:layout_below="@id/inchr_name_text_2"
+                        android:layout_height="35dp"
+                        android:layout_width="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/inchr_email_icon_2"
+                        android:layout_below="@id/inchr_num_icon_2"
+                        android:src="@drawable/email"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        style="@style/InfoData.EventInchargeData"
+                        android:id="@+id/inchr_email_text_2"
+                        android:layout_toRightOf="@id/inchr_email_icon_2"
+                        android:layout_below="@id/inchr_num_text_2"
+                        android:layout_height="35dp"
+                        android:layout_width="match_parent"
+                        android:text="@string/email_me" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

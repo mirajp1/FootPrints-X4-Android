@@ -1,0 +1,19 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+
+    <style name="MyTheme.ActionBarStyle" parent="Widget.Sherlock.ActionBar">
+        <item name="background">#ffc0392b</item>
+        <item name="android:background">#ffc0392b</item>
+    </style>
+
+    <style name="Theme.SherlockCustom" parent="@style/Theme.Sherlock">
+        <item name="actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+    </style>
+</resources>

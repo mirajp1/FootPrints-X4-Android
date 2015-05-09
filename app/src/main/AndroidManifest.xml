@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techo.fpx4"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Example">
+        <activity
+            android:name="com.techo.fpx4.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.TechnotronActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:parentActivityName="com.techo.fpx4.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.EventListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:parentActivityName="com.techo.fpx4.TechnotronActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.TechnoActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.EventActivity"
+            android:configChanges="keyboardHidden|orientation"></activity>
+        <activity
+            android:name="com.techo.fpx4.KaleidoActivity"
+            android:configChanges="keyboardHidden|orientation"></activity>
+        <activity
+            android:name="com.techo.fpx4.KaleidoEventActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_kaleido_event"
+            android:parentActivityName="com.techo.fpx4.KaleidoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.KaleidoActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.FSRActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_fsr"
+            android:parentActivityName="com.techo.fpx4.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.RSActivity"
+            android:label="@string/title_activity_rs"
+            android:parentActivityName="com.techo.fpx4.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.Splash"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:parentActivityName="com.techo.fpx4.Splash">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.Splash" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.ContactUsActivity"
+            android:label="@string/title_activity_contact_us"
+            android:parentActivityName="com.techo.fpx4.MenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.AboutUsActivity"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName="com.techo.fpx4.MenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.MapActivity"
+            android:label="@string/title_activity_map"
+            android:parentActivityName="com.techo.fpx4.MenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.StnToClg"
+            android:label="@string/title_activity_stn_to_clg"
+            android:parentActivityName="com.techo.fpx4.MapActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MapActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.BusToClg"
+            android:label="@string/title_activity_bus_to_clg"
+            android:parentActivityName="com.techo.fpx4.MapActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MapActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.CollegeMap"
+            android:label="@string/title_activity_college_map"
+            android:parentActivityName="com.techo.fpx4.MapActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MapActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.AccommoMap"
+            android:label="@string/title_activity_accommo_map"
+            android:parentActivityName="com.techo.fpx4.MapActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MapActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.AccommoEvent"
+            android:label="@string/title_activity_accommo_event"
+            android:parentActivityName="com.techo.fpx4.MenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.CreditsActivity"
+            android:label="@string/title_activity_credits"
+            android:parentActivityName="com.techo.fpx4.MenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.FollowUsActivity"
+            android:label="@string/title_activity_follow_us"
+            android:parentActivityName="com.techo.fpx4.MenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.ScheduleActivity"
+            android:label="@string/title_activity_schedule"
+            android:parentActivityName="com.techo.fpx4.MenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.ScheduleInfo"
+            android:label="@string/title_activity_schedule_info"
+            android:parentActivityName="com.techo.fpx4.ScheduleActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.ScheduleActivity" />
+        </activity>
+        <activity
+            android:name="com.techo.fpx4.GetFpIdActivity"
+            android:label="@string/title_activity_get_fp_id"
+            android:parentActivityName="com.techo.fpx4.ScheduleActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techo.fpx4.ScheduleActivity" />
+        </activity>
+    </application>
+
+</manifest>

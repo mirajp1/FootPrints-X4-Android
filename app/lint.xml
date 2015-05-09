@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/activity_main.xml" />
+    </issue>
+    <issue id="Deprecated" severity="ignore" />
+</lint>

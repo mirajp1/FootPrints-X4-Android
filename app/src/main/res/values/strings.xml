@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FootPrints X4</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Main Activity button names -->
+
+    <string name="techno">Technotron</string>
+    <string name="kaleido">Kaleidoscope</string>
+    <string name="quest">Quest</string>
+    <string name="rs">Rolling Squares</string>
+    <string name="fsr">Footprints Social Responsibilty</string>
+    <string name="fse">Footprints Stock Exchange</string>
+    <string name="addons">AddOns</string>
+    <string name="virtuosity">Virtuosity</string>
+    <string name="accommodation">Accommodation</string>
+    <string name="schedule">Schedule</string>
+    <string name="map">Map</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="events">Events</string>
+    <string name="about_us">About Us</string>
+
+    <!-- END of above the group -->
+
+
+    <!-- Technotron Activity button names -->
+
+    <string name="tech_cyber">Cybernetics</string>
+    <string name="tech_cyber_dept">Computer/IT</string>
+    <string name="tech_sanga">Sanganikee</string>
+    <string name="tech_sanga_dept">Electrical/Electronics</string>
+    <string name="tech_mech">Macheanema</string>
+    <string name="tech_mech_dept">Mechanical/Metallurgy</string>
+    <string name="tech_citadel">Citadel</string>
+    <string name="tech_citadel_dept">Civil Engineering</string>
+    <string name="tech_rasay">Rasayanam</string>
+    <string name="tech_rasay_dept">Chemical/Pharmacy</string>
+    <string name="tech_lycra">Lycra</string>
+    <string name="tech_lycra_dept">Textile Engineering</string>
+    <string name="tech_contrap">Contraption</string>
+    <string name="tech_openx_dept">Project Exposition</string>
+    <string name="tech_openx">Open-X</string>
+    <string name="tech_contrap_dept">Rube Goldberg Machine</string>
+    <string name="tech_cadmania_dept">Basic CAD Event</string>
+    <string name="tech_cadmania">CAD Mania</string>
+    <!-- END of the above group -->
+
+
+    <!-- kaleidoActivity button names -->
+
+    <string name="guest_lec">Guest Lectures</string>
+    <string name="workshops">Workshops</string>
+
+    <!-- END of above group -->
+
+
+    <!-- EventActivty labels required -->
+
+
+    <!-- Tab 1:General -->
+
+    <string name="prob_stmnt">Problem Statement</string>
+    <string name="team">Team</string>
+    <string name="fees">Fees</string>
+    <string name="event_inchr">Event Incharge</string>
+    <string name="email_me">Email</string>
+
+    <!-- END of the above group -->
+
+
+    <!-- Tab 2:Rounds -->
+
+    <string name="rounds">Rounds</string>
+    <string name="abstractd">Abstract Details</string>
+    <string name="judg_crit">Judging Criteria</string>
+    <!-- END of the above group -->
+
+
+    <!-- Tab 3:Rules -->
+
+    <string name="rules">Rules</string>
+    <string name="specs">Specifications</string>
+
+    <!-- END of the above group -->
+
+
+    <!-- Kaleido Tab 1:General -->
+
+    <string name="date_venue">Date &amp; Venue</string>
+
+    <!-- END of the above group -->
+
+
+    <!-- Kaledo Tab 2:Details -->
+
+    <string name="info">Information</string>
+    <string name="works_layout">Workshop Layout</string>
+    <string name="kit">Kit Content</string>
+    <!-- END of the above group -->
+
+    <string name="title_activity_kaleido_event">KaleidoEventActivity</string>
+    <string name="title_activity_fsr">FSRActivity</string>
+    <string name="title_activity_rs">RSActivity</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_contact_us">Contact Us</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="head_ccm">Head, Core Committee</string>
+    <string name="a_head_ccm">Associate Head, Core Committee</string>
+    <string name="reg_ccm">Registrations</string>
+    <string name="head_ccm_name">Himanshu Chetwani</string>
+    <string name="head_ccm_num">9408343800</string>
+    <string name="head_ccm_email">himanshu.chetwani@msu-footprints.org</string>
+    <string name="a_head_ccm_name">Bhargav Mehta</string>
+    <string name="a_head_ccm_num">9428073737</string>
+    <string name="a_head_ccm_email">bhargav.mehta@msu-footprints.org</string>
+    <string name="reg_ccm_name_1">Nikunj Acharya</string>
+    <string name="reg_ccm_num_1">9408948483</string>
+    <string name="reg_ccm_email_1">nikunj.acharya@msu-footprints.org</string>
+    <string name="reg_ccm_name_2">Akshat Jain</string>
+    <string name="reg_ccm_num_2">9099781498</string>
+    <string name="reg_ccm_email_2">akshat.jain@msu-footprints.org</string>
+    <string name="reg_ccm_name_3">Damini Shah</string>
+    <string name="reg_ccm_num_3">7405853658</string>
+    <string name="reg_ccm_email_3">damini.shah@msu-footprints.org</string>
+    <string name="title_activity_about_us">About Us</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_stn_to_clg">Station To College</string>
+    <string name="title_activity_bus_to_clg">Bus Depot to College</string>
+    <string name="title_activity_college_map">College Map</string>
+    <string name="title_activity_accommo_map">Accommodation Map</string>
+    <string name="title_activity_accommo_event">Acoommodation</string>
+    <string name="duration">Duration</string>
+    <string name="termsncondi">Terms and Condition</string>
+    <string name="details">Details</string>
+    <string name="address">Address</string>
+    <string name="credits">Credits</string>
+    <string name="follow_us">Follow Us</string>
+    <string name="title_activity_credits">Credits</string>
+    <string name="developed_by">Developers</string>
+    <string name="contrib">Acknowledgements</string>
+    <string name="dev_info">Miraj Patel\n\n
+        					Organising Team,\n
+        					FootPrints X4,\n
+        					Faculty of Technology and Engineering (MSU),\n
+        					Vadodara\n\n
+        					Email: mirajp1@gmail.com
+</string>
+
+    <string name="dev_info_1">Nikunj Acharya\n\n
+        					Core Committee,\n
+        					FootPrints X4,\n
+        					Faculty of Technology and Engineering (MSU),\n
+        					Vadodara\n\n
+        					Email: nikunj4acharya@gmail.com
+</string>
+
+    <string name="contrib_info">- Team Footprints :) :D :P\n\n
+        						- icomoon.io for the icons.\n\n
+        						- Smit Shah for his fantastic dome creation used in the splash screen.\n\n
+        						- Jake Wharton for his ActionBarSherlock Library.\n\n
+        						- MikeOrtiz for his TouchImageView class.        					
+</string>
+
+
+    <string name="title_activity_follow_us">Follow Us</string>
+    <string name="fb">Facebook</string>
+    <string name="yt">YouTube</string>
+    <string name="twit">Twitter</string>
+    <string name="li">LinkedIn</string>
+    <string name="quora">Quora</string>
+    <string name="title_activity_schedule">Schedule</string>
+    <string name="schedule_info">Detailed Schedule Information will be available on our website.</string>
+    <string name="title_activity_schedule_info">ScheduleInfo</string>
+    <string name="enter_event_id">Enter your Event-ID</string>
+    <string name="title_activity_get_fp_id">Get FP-ID</string>
+    <string name="enter_mob_num">Enter Mobile Number</string>
+    <string name="enter_email">Enter Email Address</string>
+
+    <string name="get_schedule">Get Schedule</string>
+    <string name="get_fp_id">Get FP-ID</string>
+    <string name="event_id_hint">CY-9999</string>
+    <string name="email_hint">example@abc.com</string>
+    <string name="num_hint">9999009900</string>
+
+
+    <string name="day1">Day-1</string>
+    <string name="day2">Day-2</string>
+    <string name="day3">Day-3</string>
+    <string name="place">Place</string>
+    <string name="slot1">Slot-1</string>
+    <string name="slot2">Slot-2</string>
+    <string name="slot3">Slot-3</string>
+    <string name="slot4">Slot-4</string>
+    <string name="slot5">Slot-5</string>
+    <string name="nine_one">+91</string>
+    <string name="name">Name</string>
+    <string name="event_ids">Event-IDs</string>
+    <string name="fp_id">FP-ID</string>
+
+    <string name="website">Our Website</string>
+    <string name="on_reg">Online Registrations</string>
+
+</resources>

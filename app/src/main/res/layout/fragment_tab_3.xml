@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rules_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card">
+
+
+            <ImageView
+                android:id="@+id/rules_icon"
+                android:src="@drawable/rules"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="12dp" />
+
+
+            <TextView
+                style="@style/InfoHeader"
+                android:id="@+id/rules_h"
+                android:text="@string/rules"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/rules_icon" />
+
+
+            <View
+                android:id="@+id/rules_d"
+                android:layout_below="@id/rules_icon"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#40111111"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                style="@style/InfoData"
+                android:id="@+id/rules_i"
+                android:layout_below="@id/rules_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/specs_l"
+            android:layout_below="@id/rules_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card">
+
+
+            <ImageView
+                android:id="@+id/specs_icon"
+                android:src="@drawable/specs"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp" />
+
+
+            <TextView
+                style="@style/InfoHeader"
+                android:id="@+id/specs_h"
+                android:text="@string/specs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/specs_icon" />
+
+
+            <View
+                android:id="@+id/specs_d"
+                android:layout_below="@id/specs_icon"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#40111111"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                style="@style/InfoData"
+                android:id="@+id/specs_i"
+                android:layout_below="@id/specs_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

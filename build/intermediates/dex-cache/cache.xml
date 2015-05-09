@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2">
+
+    <item jar="E:\app\FootPrintsX4\app\libs\android-sqlite-asset-helper.jar" jumboMode="false"
+        revision="21.1.2" sha1="20f039a3336c18f93cfddfa1a49ce91a55361c40">
+        <dex
+            dex="E:\app\FootPrintsX4\app\build\intermediates\pre-dexed\debug\android-sqlite-asset-helper-c9d6d4b25f2b16003824c56aa1f64d1d1207287d.jar" />
+    </item>
+    <item
+        jar="E:\app\FootPrintsX4\app\build\intermediates\exploded-aar\com.actionbarsherlock\actionbarsherlock\4.4.0\classes.jar"
+        jumboMode="false" revision="21.1.2" sha1="af64527b748983a75de9c0756e9768b56b240a49">
+        <dex
+            dex="E:\app\FootPrintsX4\app\build\intermediates\pre-dexed\debug\classes-2039bd03ee9fceb77fef33b2bf9c0260fcab334b.jar" />
+    </item>
+    <item
+        jar="C:\Android\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false" revision="21.1.2" sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex
+            dex="E:\app\FootPrintsX4\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-1b4f82c9d378433e10effdff7e5dbd23e5b9b3d5.jar" />
+    </item>
+
+</items>

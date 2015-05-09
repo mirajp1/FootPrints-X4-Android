@@ -1,0 +1,60 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+
+    android:id="@+id/scroll">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/guest_lec_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guest_lec"
+            android:textSize="22sp"
+            android:background="#ffffff"
+            android:layout_marginBottom="6dp"
+            android:padding="10dp" />
+
+
+        <ListView
+            android:id="@+id/listview_guest_lec"
+            android:layout_below="@id/guest_lec_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@android:color/transparent"
+            android:divider="@null"
+
+            />
+
+
+        <TextView
+            android:id="@+id/workshops_heading"
+            android:layout_below="@id/listview_guest_lec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/workshops"
+            android:textSize="22sp"
+            android:background="#ffffff"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="4dp"
+            android:padding="10dp" />
+
+
+        <ListView
+            android:id="@+id/listview_workshops"
+            android:layout_below="@id/workshops_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@android:color/transparent"
+            android:divider="@null"
+
+            />
+
+
+    </RelativeLayout>
+</ScrollView>

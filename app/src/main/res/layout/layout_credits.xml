@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+
+    >
+
+    <!-- symbols used 
+    
+    	_l means layout idn
+    	_icon means icon for that box
+    	_h means textview of header of box
+    	_d means the divider
+    	_i means the textview of the information of that box
+    
+    	
+    -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/dev_by_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card">
+
+
+            <ImageView
+                android:id="@+id/dev_by_icon"
+                android:src="@drawable/prob_stmnt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp" />
+
+
+            <TextView
+                style="@style/InfoHeader"
+                android:id="@+id/dev_by_h"
+                android:text="@string/developed_by"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/dev_by_icon" />
+
+
+            <View
+                android:id="@+id/dev_by_d"
+                android:layout_below="@id/dev_by_icon"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#40111111"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                style="@style/InfoData"
+                android:id="@+id/dev_by_i"
+                android:layout_below="@id/dev_by_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/dev_info" />
+
+            <View
+                android:id="@+id/dev_by_d_1"
+                android:layout_below="@id/dev_by_i"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#40111111"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                style="@style/InfoData"
+                android:id="@+id/dev_by_i_1"
+                android:layout_below="@id/dev_by_d_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/dev_info_1" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/dev_by_l"
+            android:id="@+id/contrib_by_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card">
+
+
+            <ImageView
+                android:id="@+id/contrib_by_icon"
+                android:src="@drawable/prob_stmnt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp" />
+
+
+            <TextView
+                style="@style/InfoHeader"
+                android:id="@+id/contrib_by_h"
+                android:text="@string/contrib"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/contrib_by_icon" />
+
+
+            <View
+                android:id="@+id/contrib_by_d"
+                android:layout_below="@id/contrib_by_icon"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#40111111"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                style="@style/InfoData"
+                android:id="@+id/contrib_by_i"
+                android:layout_below="@id/contrib_by_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/contrib_info" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

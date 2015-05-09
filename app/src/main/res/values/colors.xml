@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000</color>
+    <color name="blue">#00f</color>
+    <color name="red">#f00</color>
+    <color name="hover_blue">#37B1CC</color>
+    <color name="main_background">#302c3e50</color>
+    <color name="button_text">#2c3e50</color>
+    <color name="main_button_highlight">#ecf0f1</color>
+    <color name="main_button_normal">#ffffff</color>
+    <color name="main_button_text_name_normal">#E6000000</color>
+    <color name="main_button_text_name_pressed">#E6000000</color>
+    <color name="main_button_text_dept_normal">#C8000000</color>
+    <color name="main_button_text_dept_pressed">#C8000000</color>
+    <color name="try1">#2c3e50</color>
+    <color name="info_header_text">#2c3e50</color>
+    <color name="info_data_text">#ff000000</color>
+</resources>

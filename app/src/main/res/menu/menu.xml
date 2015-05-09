@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/get_fp_id"
+        android:showAsAction="always|withText"
+        android:title="@string/get_fp_id" />
+
+</menu>
